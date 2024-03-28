@@ -213,9 +213,9 @@ class OpcacheCollector(object):
         #get php content
         client = FastCGIClient(self._fhost, self._fport, 3, 0)
         params = dict()
-        documentRoot = "/tmp"
-        uri = tmpfile.name
-        scriptname = uri.replace('/tmp','',1)
+        documentRoot = "/usr/local/share/opcache/"
+        uri = "opcache-state.php"
+        scriptname = "/usr/local/share/opcache/opcache-state.php"
         content = self._phpcontent
         params = {
             'GATEWAY_INTERFACE': 'FastCGI/1.0',
