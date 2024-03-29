@@ -220,7 +220,7 @@ class OpcacheCollector(object):
         params = {
             'GATEWAY_INTERFACE': 'FastCGI/1.0',
             'REQUEST_METHOD': 'POST',
-            'SCRIPT_FILENAME': uri,
+            'SCRIPT_FILENAME': scriptname,
             'SCRIPT_NAME': scriptname,
             'QUERY_STRING': '',
             'REQUEST_URI': scriptname,
